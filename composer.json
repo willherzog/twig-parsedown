@@ -1,0 +1,23 @@
+{
+	"name": "willherzog/twig-parsedown",
+	"description": "A Parsedown specific Twig extension with both block-level and line-only filters.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Will Herzog",
+            "email": "willherzog@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+		"php": "^8.2",
+		"twig/twig": "^3.0",
+        "erusev/parsedown": "^1.7"
+	},
+    "autoload": {
+        "psr-4": {
+            "WHTwig\\": "src/"
+        }
+    }
+}
