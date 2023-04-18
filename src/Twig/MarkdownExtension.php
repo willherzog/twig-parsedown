@@ -5,6 +5,8 @@ namespace WHTwig\Twig;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
 
+use Parsedown as MarkdownConverter;
+
 /**
  * @author Will Herzog <willherzog@gmail.com>
  */
@@ -14,7 +16,7 @@ class MarkdownExtension extends AbstractExtension
 
 	public function __construct()
 	{
-		$this->markdownConverter = new \Parsedown();
+		$this->markdownConverter = new Parsedown();
 	}
 
 	/**
