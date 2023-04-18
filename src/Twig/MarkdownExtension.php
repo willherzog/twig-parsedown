@@ -16,7 +16,7 @@ class MarkdownExtension extends AbstractExtension
 
 	public function __construct()
 	{
-		$this->markdownConverter = new Parsedown();
+		$this->markdownConverter = new MarkdownConverter();
 	}
 
 	/**
