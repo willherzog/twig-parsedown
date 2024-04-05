@@ -14,9 +14,9 @@ class MarkdownExtension extends AbstractExtension
 {
 	protected readonly MarkdownConverter $markdownConverter;
 
-	public function __construct()
+	public function __construct(?MarkdownConverter $markdownConverter = null)
 	{
-		$this->markdownConverter = new MarkdownConverter();
+		$this->markdownConverter = $markdownConverter ?? new MarkdownConverter();
 	}
 
 	/**
